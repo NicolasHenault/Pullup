@@ -1,0 +1,282 @@
+body{
+    font-family: @font1;    
+}
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+}
+h1, h2{
+    text-transform: uppercase;        
+    font-weight: normal; 
+}
+ a{           
+    color: @white;
+    text-decoration: none;
+}
+
+// Le header-----------------------------------------------------------------
+   
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media @laptop{
+        justify-content: space-between;
+    }
+    .logo{
+       color: @white;
+        padding-left: 15px;
+    }
+    background-color: @backgris;          
+    ul{
+        display: flex;
+        justify-content: center;       
+        li{
+            margin: 20px;
+            font-size: 1em;           
+        }        
+    }
+}
+
+
+// SECTION 1-----------------------------------------------------------------
+
+#section1{
+    background-color: @bleu;
+    text-transform: uppercase;
+    color: @white;    
+    height: 600px;       
+    align-items: center;
+    text-align: center;   
+    h1 {        
+        border: 4px solid;
+        border-radius: 5px;
+        width: 80%;
+        padding: 20px;
+        @media @laptop{
+            width: 40%
+        }
+     }
+    button{
+        background-color: @white;
+        color: @bleu;
+        width: auto;
+        height: 50px;
+        text-transform: uppercase;
+        border: 4px solid;
+        border-radius: 10px;
+    }
+}
+
+// SECTION 2-----------------------------------------------------------------
+
+#section2{    
+    padding: 20px;           
+    h2{        
+        text-align: center;        
+    }
+    #blocs{
+        display: flex;
+        flex-direction: column;
+        @media @laptop{
+            flex-direction: row;
+            justify-content: space-between;            
+        }
+    }
+    h3{
+        color: @bleu;        
+    }
+    p{
+        padding:0 15px;
+    }
+    img{
+       vertical-align: middle;
+    }
+}
+
+// SECTION 3-----------------------------------------------------------------
+
+#section3{
+    background-color: @backgris;
+    color: @white;
+    padding: 20px;    
+    height: auto;
+    img{
+        width: 40%;
+         height: auto;
+    }
+    #ima{
+        @media @laptop{
+            flex: 0 0 40%;
+        }
+    }
+    @media @laptop{
+        flex-direction: row;
+    }
+}
+
+// SECTION 4-----------------------------------------------------------------
+
+#section4{    
+    padding: 20px;
+    @media @laptop{
+        #formulaire{
+            display: flex;
+        }
+    }
+    h2{        
+        text-align: center;
+    }
+    form{
+        font-family: @font1;
+        @media @laptop{
+            flex: 0 0 45%;
+            padding-right: 25px;
+        }
+        label
+            {
+                font-weight: bold;               
+            }
+        input{
+            width: 100%;
+            height: 40px;
+            border-radius: 8px;
+            margin-top: 15px;
+            padding-left: 10px;
+            &#bouton{
+                width: auto;
+                background-color: @bleu;
+                color: @white;
+                border: @bleu;                    
+            }
+        }
+    }
+    .barre{
+        width: 100%;
+        height: 1px;
+        background-color: grey;
+        @media @laptop{
+            display: none;
+        }
+    }
+}
+
+// SECTION 5-----------------------------------------------------------------
+
+#section5{    
+    align-items: center;
+    text-align: center;
+    background-image: url("../img/arbre.jpg");
+    font-size: 4em;
+    color: @white;
+    text-shadow: black 2px 2px 2px;
+}
+
+// SECTION 6-----------------------------------------------------------------
+
+#section6{    
+    padding: 10px;
+    align-items: center;
+    text-align: center;
+    @media @laptop{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .prix{
+        border: 1px grey solid;
+        width: 100%;
+        margin-bottom: 15px;
+        @media @laptop{
+            flex:0 0 30%;
+        }
+        .header{
+            text-transform: uppercase;
+            background-color: @bleu;
+            padding: 50px 0;
+            color: @white;
+            &#pro{
+                background-color: @backgris;
+            }
+            &#ultimate{
+                background-color: @black;
+            }
+            p{
+                margin: 0;
+                font-size: 1.4em;
+            }
+            .gros{
+                padding: 50px 0;
+                font-size: 3em;            }
+        }
+        ul{
+            background-color: @backclair;
+            li{
+               border: 1px grey solid;
+                height: 50px;
+                line-height: 50px;
+            }
+        }
+        button{
+            background-color: white;
+            height: 40px;
+            border-radius: 8px;
+            margin: 10px 0;
+        }
+    }
+}
+
+
+// SECTION 7-----------------------------------------------------------------
+
+#section7{    
+    padding: 20px; 
+    @media @laptop{
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        div{            
+            flex: 0 0 40%;
+        }
+    }
+    h5{
+        text-transform: uppercase;
+        font-size: 1.6em;
+    }
+}
+
+// FOOTER--------------------------------------------------------------------
+
+footer{
+    text-align: center;
+    p{
+        background-color: @backclair;
+        height: 100px;
+        line-height: 100px;
+        margin: 0;
+    }
+    ul{
+        background-color: @backgris;
+        color: @white;
+        font-size: 0.8em;
+        @media @laptop{
+            display: flex;
+            justify-content: space-around;
+        }
+        li{
+            padding: 10px;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
